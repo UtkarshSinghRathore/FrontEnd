@@ -1,11 +1,14 @@
 <html>
-    <head>
-        <title>
-            Final Confirmation
-        </title>
-        <link rel="stylesheet" href="Final_Confirmation.css">
-    </head>
-    <body>
+
+<head>
+    <title>
+        Final Confirmation
+    </title>
+    <link rel="stylesheet" href="Final_Confirmation.css">
+</head>
+
+<body>
+    <div class="body">
         <div class="bank-logo">
             <div class="logo">
                 <p class="bank-logo-text">Bank Logo</p>
@@ -14,32 +17,34 @@
         <div class="bank-use">
             <p class="bank-use-text">
                 (Banks use) This area can be used by the bank for
-                     their promotional message, other related information
+                their promotional message, other related information
             </p>
         </div>
         <div class="confirmation-form">
             <label class="confirmation-label">
                 Mandate issued to
             </label>
-            <input type="text" class="confirmation-input" disabled placeholder="Corporate name">
+            <input type="text" class="confirmation-input" disabled placeholder="Corporate name"
+                [(ngModel)]="customer.corporateName" name="corporateName">
         </div>
         <div class="confirmation-form">
             <label class="confirmation-label">
                 Start Date
             </label>
-            <input type="date" class="confirmation-input" disabled>
+            <input type="date" class="confirmation-input" disabled [(ngModel)]="customer.startDt" name="startDt">
         </div>
         <div class="confirmation-form">
             <label class="confirmation-label">
                 End Date
             </label>
-            <input type="date" class="confirmation-input" disabled>
+            <input type="date" class="confirmation-input" disabled [(ngModel)]="customer.endDt" name="endDt">
         </div>
         <div class="confirmation-form">
             <label class="confirmation-label-amount">
                 Amount in figures
             </label>
-            <input type="text" class="confirmation-input-rupee" disabled placeholder="Rupee">
+            <input type="text" class="confirmation-input-rupee" disabled placeholder="Rupee"
+                [(ngModel)]="customer.amount" name="amount">
             <input type="text" class="confirmation-input-paise" disabled placeholder="Paise">
         </div>
         <div class="confirmation-form">
@@ -56,22 +61,24 @@
         </div>
         <div class="success-area">
             <img src="green-tick-vector-isolated-icon-white-background-check-mark-symbol-sign-color-done-stock-illustration-92140743.jpg"
-              class="tick">
-              <p class="success-text">Your E-Mandate registration is successfully completed.
-                   Your reference ID for E-Mandate registration is <b>XXXX.</b></p>
+                class="tick">
+            <p class="success-text">Your E-Mandate registration is successfully completed.
+                Your reference ID for E-Mandate registration is <b>XXXX.</b></p>
         </div>
         <div class="query-area">
-            <p class="query-text">In case of any issues/ query related to E-mandate registration 
+            <p class="query-text">In case of any issues/ query related to E-mandate registration
                 you may write to xxxxxx@xxxx.xx or call xxxxxxxxxxxxx</p>
         </div>
         <p class="powered-by">E-Mandate powered by</p>
-                    <div class="brands">
-                        <div class="brands__image-wrapper">
-                            <img src="./NACH-Logo.png" class="brands__image" />
-                        </div>
-                        <div class="brands__image-wrapper">
-                            <img src="./NACH.jpg" class="brands__image" />
-                        </div>
-                    </div>
-    </body>
+        <div class="brands">
+            <div class="brands__image-wrapper">
+                <img src="./NACH-Logo.png" class="brands__image" />
+            </div>
+            <div class="brands__image-wrapper">
+                <img src="./NACH.jpg" class="brands__image" />
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
