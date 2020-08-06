@@ -1,0 +1,110 @@
+body{
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid black;
+}
+.bank-logo{
+    border-bottom: 2px solid black;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.bank-logo-text{
+    font-size: 1.5vw;
+}
+.bank-use{
+    border: 2px solid black;
+    display: flex;
+    margin: 30px auto;
+    height: 12%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.bank-use-text{
+    font-size: 1vw;
+    
+}
+.confirmation-form{
+    /* border: 1px solid black; */
+    display: flex;
+    margin:15px auto;
+    width: 60%;
+    justify-content: space-around;
+    border-collapse: collapse;
+}
+.confirmation-label{
+    flex: 1;
+}
+.confirmation-input{
+    flex: 1;
+    border: 2px solid black;
+}
+.confirmation-label-amount{
+    /* border: 1px solid black; */
+    width: 80%;
+    flex-grow: 1;
+}
+.confirmation-input-rupee{
+    width: 60%;
+    border: 2px solid black;
+    
+}
+.confirmation-input-paise{
+    width: 20%;
+    border: 2px solid black;
+}
+.success-area{
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+    justify-content:flex-start;
+
+}
+.tick{
+    margin :auto auto;
+    /* height: 15%; */
+    /* border: 1px solid black; */
+    width: 5%;
+    
+    
+}
+.success-text{
+    margin: auto auto;
+    width: 100%;
+    /* flex: 1; */
+   /* border: 1px solid black; */
+    font-size: 1.2vw;
+    text-align: center;
+}
+.query-area{
+    margin: 50px auto;
+    width: 60%;
+    display: flex;
+}
+.query-text{
+    text-align: center;
+}
+.powered-by {
+    text-align: center;
+    margin: 45px 0 10px 0;
+    font-size: 11px;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+}
+
+.brands__image-wrapper {
+    width: 100px;
+}
+
+.brands__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
